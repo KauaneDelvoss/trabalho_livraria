@@ -20,7 +20,6 @@ class Livro(models.Model):
     )
     autores = models.ManyToManyField(Autor, related_name="livros")
     capa = models.ForeignKey(
-        Image,
         related_name="+",
         on_delete=models.CASCADE,
         null=True,
