@@ -164,5 +164,3 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 ALLOWED_HOSTS = env('ALLOWED_HOSTS').split(',')
 DATABASES = {'default': env.db()}
-USER = ('USER')
-PASSWORD = ('PASSWORD')
