@@ -81,12 +81,17 @@ WSGI_APPLICATION = 'livraria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        'USER': 'KauaneDelvoss',
+        'PASSWORD': 'kauanedelvoss',
+        'HOST': 'localhost',
+        'PORT': '',
+
+  }
+}
 
 
 # Password validation
@@ -159,3 +164,5 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 ALLOWED_HOSTS = env('ALLOWED_HOSTS').split(',')
 DATABASES = {'default': env.db()}
+USER = {'USER': env('USER')}
+PASSWORD = {'PASSWORD': env('PASSWORD')}
